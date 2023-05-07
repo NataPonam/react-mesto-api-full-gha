@@ -1,0 +1,62 @@
+.popup__btn {
+  margin-top: 15px;
+  padding: 0;
+  background-color: #000;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  font-family: 'Inter', Arial, sans-serif;
+  width: 238px;
+  height: 46px;
+  border-radius: 2px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.popup__btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (min-width: 1280px) {
+  .popup__btn {
+    width: 358px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.popup__btn.avatar {
+  margin-top: 11px;
+}
+.popup__btn.auth {
+  color: #000;
+  background-color: #fff;
+  margin-top: 144px;
+  width: 260px;
+  height: 46px;
+  font-size: 16px;
+}
+@media screen and (min-width: 1280px) {
+  .popup__btn.auth {
+    width: 358px;
+    height: 50px;
+    margin-top: 185px;
+    font-size: 18px;
+  }
+}
+
+.popup__btn.lost{
+  color: #000;
+  background-color: #fff;
+  width: 260px;
+  height: 46px;
+}
+@media screen and (min-width: 1280px) {
+  .popup__btn.lost {
+    width: 358px;
+    height: 50px;
+  }}

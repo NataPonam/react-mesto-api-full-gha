@@ -1,0 +1,12 @@
+.card__count-like {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+
+}

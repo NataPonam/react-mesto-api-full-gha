@@ -1,0 +1,20 @@
+.profile__avatar-edit {
+  background: no-repeat center;
+  height: 26px;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  z-index: 0;
+
+}
+
+.profile__avatar-edit:hover {
+  z-index: 1;
+}
+
+@media screen and (min-width: 1280px) {
+  .profile__avatar-edit {
+    left: 30%;
+
+  }
+}

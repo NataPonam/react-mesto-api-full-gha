@@ -1,0 +1,17 @@
+.body {
+  margin: 0 auto;
+  min-height: 100vh;
+  min-width: 282px;
+  max-width: 880px;
+  background: #000000;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}

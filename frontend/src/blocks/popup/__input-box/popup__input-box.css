@@ -1,0 +1,19 @@
+.popup__input-box {
+  display: flex;
+  flex-direction: column;
+  border-style: none;
+  padding: 0;
+  margin: 0 auto;
+  min-width: 238px;
+  flex: 1;
+}
+
+@media screen and (min-width: 1280px) {
+  .popup__input-box {
+    margin: 0;
+    max-width: 358px;
+  }
+}
+
+.popup__input-box.auth{
+  min-width: 260px;}

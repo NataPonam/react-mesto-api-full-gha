@@ -1,0 +1,12 @@
+.popup__form-places {
+  display: flex;
+  flex-direction: column;
+  max-height: 272px;
+
+}
+
+@media screen and (min-width: 1280px) {
+  .popup__form-places {
+    min-height: 0;
+  }
+}

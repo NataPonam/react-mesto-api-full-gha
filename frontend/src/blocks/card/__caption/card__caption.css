@@ -1,0 +1,19 @@
+.card__caption {
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 21px;
+  max-width: 282px;
+  box-sizing: border-box;
+}
+
+
+@media screen and (min-width: 1280px) {
+  .card__caption {
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+}

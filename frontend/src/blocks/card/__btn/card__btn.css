@@ -1,0 +1,18 @@
+.card__btn {
+  padding: 0;
+  padding-right: 22px;
+  background-color: transparent;
+  background-image: url(../../../images/heart.svg);
+  background-repeat: no-repeat;
+  color: black;
+  width: 22px;
+  height: 19px;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+}
+
+.card__btn:hover {
+  opacity: .5;
+}

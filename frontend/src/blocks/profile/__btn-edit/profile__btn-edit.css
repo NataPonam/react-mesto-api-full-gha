@@ -1,0 +1,26 @@
+.profile__btn-edit {
+  padding: 0;
+  margin-left: 5px;
+  background: url(../../../images/Vector_btn_edit_320.svg) no-repeat center;
+  background-size: 7.5px;
+  border: 1px solid #fff;
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+}
+
+.profile__btn-edit:hover {
+  opacity: .6;
+}
+
+@media screen and (min-width: 1280px) {
+  .profile__btn-edit {
+    align-self: end;
+    margin-left: 0;
+    background-size: 10px;
+    width: 24px;
+    height: 24px;
+  }
+}

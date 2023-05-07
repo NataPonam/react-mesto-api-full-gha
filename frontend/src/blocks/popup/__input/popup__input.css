@@ -1,0 +1,34 @@
+.popup__input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 0;
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 30px;
+  padding-bottom: 7px;
+}
+
+@media screen and (min-width: 1280px) {
+  .popup__input {
+    margin-bottom: 32px;
+    padding-bottom: 5px;
+  }
+}
+.popup__input.auth{
+color:rgba(255, 255, 255, 1);
+background-color: #000000;
+border-bottom: 2px solid rgba(204, 204, 204, 1);
+
+
+}
+.popup__input.auth::placeholder {
+  color:  rgba(204, 204, 204, 1);
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+ 
+}

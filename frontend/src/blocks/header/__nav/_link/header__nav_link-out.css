@@ -1,0 +1,14 @@
+.header__nav_link-out {
+  text-decoration: none;
+  color: #a9a9a9;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 24px;
+}
+@media screen and (min-width: 1280px) {
+  .header__nav_link-out {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
