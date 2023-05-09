@@ -1,5 +1,4 @@
 {
-  "homepage": "http://localhost:3000/sign-up",
   "name": "mesto-react",
   "version": "0.1.0",
   "private": true,
