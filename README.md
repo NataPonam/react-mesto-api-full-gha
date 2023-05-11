@@ -8,7 +8,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 51.250.77.186
+IP 51.250.77.186
 
 Frontend https://sun.nomoredomains.monster
 
