@@ -74,6 +74,14 @@ function App() {
     isAskPopupOpen ||
     isTooltipOpen;
 
+    const api = new Api({
+      url: 'https://api.moon.nomoredomains.monster',
+      headers: {
+        'Content-Type': 'application/json',
+        authorization: `Bearer ${localStorage.getItem('jwt')}`,
+      },
+    });
+
   useEffect(() => {
     function closeByEscape(e) {
       if (e.key === 'Escape') {

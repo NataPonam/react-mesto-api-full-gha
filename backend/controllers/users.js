@@ -5,8 +5,7 @@ const User = require('../models/user');
 const ConflictError = require('../errors/ConflictError');// 409
 const Unauthorized = require('../errors/Unauthorized');// 401
 const BadRequest = require('../errors/BadRequest');// 400
-const NotFound = require('../errors/NotFound');
-// 404
+const NotFound = require('../errors/NotFound');// 404
 const { NODE_ENV, JWT_SECRET } = process.env;
 
 const createUser = (req, res, next) => {
