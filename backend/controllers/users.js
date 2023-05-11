@@ -1,10 +1,13 @@
+require('dotenv').config();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
 const ConflictError = require('../errors/ConflictError');// 409
 const Unauthorized = require('../errors/Unauthorized');// 401
 const BadRequest = require('../errors/BadRequest');// 400
-const NotFound = require('../errors/NotFound');// 404
+const NotFound = require('../errors/NotFound');
+// 404
+const { NODE_ENV, JWT_SECRET } = process.env;
 
 const createUser = (req, res, next) => {
   const {
@@ -45,9 +48,12 @@ const login = (req, res, next) => {
           if (!isEqual) {
             throw new Unauthorized('Неверный email или пароль');
           }
-          const token = jwt.sign({ _id: user._id }, 'что-то очень секретное', { expiresIn: '7d' });
+          const token = jwt.sign(
+            { _id: user._id },
+            NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret',
+            { expiresIn: '7d' },
+          );
           res.status(200).send({ token });
-          // res.status(200).send(user);
         });
     })
     .catch(next);
@@ -76,12 +82,10 @@ const getUsersById = (req, res, next) => {
     .then((user) => {
       if (user) { return res.send(user); }
       return next(new NotFound('Пользователь с таким id не найден'));
-      // return res.status(ERROR_NOT_FOUND).send({ message: 'Пользователь с таким id не найден' });
-    })
+          })
     .catch((err) => {
       if (err.name === 'CastError') {
         return next(new BadRequest('Некорректные данные пользователя'));
-        // return res.status(BAD_REQUEST).send({ message: 'Некорректные данные пользователя' });
       }
       return next(err);
     });
