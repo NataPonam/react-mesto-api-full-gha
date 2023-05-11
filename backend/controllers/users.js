@@ -52,6 +52,7 @@ const login = (req, res, next) => {
             NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret',
             { expiresIn: '7d' },
           );
+          /*const token = jwt.sign({ _id: user._id }, 'что-то очень секретное', { expiresIn: '7d' });*/
           res.status(200).send({ token });
         });
     })
